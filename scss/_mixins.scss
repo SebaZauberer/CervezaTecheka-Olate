@@ -1,0 +1,28 @@
+//para el tamaño de fuente
+@mixin fSize($sz) {
+  $szPx: #{$sz}px;
+  $szRem: ($sz*100 / $fontSizeG) / 100;
+  font-size: $szPx;
+  font-size: #{$szRem}rem;
+}
+
+//para los media queries
+@mixin media($querie) {
+    @if $querie=="md" {
+        @media only screen and (min-width: $breakpointTablet) {
+            @content;
+        }
+    }
+
+    @else if $querie=="lg" {
+        @media only screen and (min-width: $breakpointMonitor) {
+            @content;
+        }
+    }
+
+    @else {
+        @media only screen and (#{$querie}) {
+            @content;
+        }
+    }
+}

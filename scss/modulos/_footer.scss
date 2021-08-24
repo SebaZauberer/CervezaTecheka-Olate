@@ -1,0 +1,19 @@
+#footer {
+  background-color: $verde1;
+
+  li {
+    list-style-type: none;
+    margin: 0 10px;
+    display: flex;
+
+    a img {
+      width: 100%;
+      max-width: 40px;
+    }
+  }
+
+  .btnTecheka {
+    display: flex;
+    align-items: center;
+  }
+}

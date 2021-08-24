@@ -1,0 +1,29 @@
+.btnTecheka {
+  display: inline-block;
+  margin: 15px 0px;
+  padding: 10px;
+  color: $azul;
+  border: 2px solid $azul;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 300ms;
+  @include fSize(16);
+
+  &:hover {
+    background-color: $azul;
+    color: $verde1;
+  }
+
+  &--inverse {
+    color: $verde1;
+    border: 2px solid $verde1;
+    background-color: transparent;
+    &:hover {
+      color: $azul;
+      border: 2px solid $verde1;
+      background-color: $verde1;
+    }
+  }
+}
+
+

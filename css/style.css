@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  background-image: url("../img/dot-grid.png");
+  background-repeat: repeat;
+  background-attachment: fixed; }
+
+main {
+  min-height: 70vh; }
+
+h1 {
+  font-family: "Patua One", cursive;
+  font-size: 3rem; }
+
+h2 {
+  font-family: "Patua One", cursive;
+  font-size: 2.5rem; }
+
+hr {
+  height: 2px;
+  background: #bbb;
+  border: 0; }
+
+#header {
+  background-color: #AAFF69; }
+  #header .navbar-brand img {
+    width: 40%; }
+  #header .navbar-light .navbar-nav .active .btn-group .nav-link {
+    color: #000; }
+  #header .navbar-nav .dropdown-menu {
+    position: absolute; }
+
+.btnTecheka {
+  display: inline-block;
+  margin: 15px 0px;
+  padding: 10px;
+  color: #0B2D40;
+  border: 2px solid #0B2D40;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 300ms;
+  font-size: 16px;
+  font-size: 1rem; }
+  .btnTecheka:hover {
+    background-color: #0B2D40;
+    color: #AAFF69; }
+  .btnTecheka--inverse {
+    color: #AAFF69;
+    border: 2px solid #AAFF69;
+    background-color: transparent; }
+    .btnTecheka--inverse:hover {
+      color: #0B2D40;
+      border: 2px solid #AAFF69;
+      background-color: #AAFF69; }
+
+.videoHero {
+  height: 70vh;
+  position: relative;
+  overflow: hidden; }
+  .videoHero__video {
+    position: absolute;
+    bottom: 0;
+    height: 100%; }
+  .videoHero__titulo {
+    font-family: "Patua One", cursive;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2; }
+  @media only screen and (min-width: 768px) {
+    .videoHero__titulo {
+      font-size: 2.5rem;
+      top: 20%; } }
+  @media only screen and (min-width: 992px) {
+    .videoHero {
+      height: 91vh; }
+      .videoHero__video {
+        height: unset;
+        width: 100%; }
+      .videoHero__titulo {
+        font-size: 3rem;
+        top: 65%; } }
+
+.sobreNosotros {
+  background-color: #A7D175; }
+  .sobreNosotros__img {
+    margin: 40px 0;
+    align-self: center; }
+  .sobreNosotros .btnTecheka {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  @media only screen and (min-width: 768px) {
+    .sobreNosotros__titulo {
+      margin: 52px 0 30px; } }
+  @media only screen and (min-width: 992px) {
+    .sobreNosotros .btnTecheka {
+      display: inline-block; } }
+
+.catalogoHome {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-color: #0B2D40;
+  color: #fff; }
+  .catalogoHome__bloque1 {
+    flex-basis: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; }
+  .catalogoHome__titulo {
+    margin: 52px 0 30px;
+    color: #AAFF69; }
+  .catalogoHome__bloque2 {
+    height: 500px;
+    overflow: hidden;
+    position: relative; }
+  .catalogoHome__img {
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+  .catalogoHome .btnTecheka {
+    display: block;
+    margin-top: 30px;
+    width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .catalogoHome {
+      flex-flow: row nowrap; }
+      .catalogoHome__bloque1 {
+        flex-basis: 50%; }
+      .catalogoHome__bloque2 {
+        flex-basis: 50%; } }
+  @media only screen and (min-width: 992px) {
+    .catalogoHome .btnTecheka {
+      display: inline-block;
+      width: auto; } }
+
+.reconocimientos__titulo--1 {
+  margin: 52px 0;
+  flex-basis: 100%;
+  text-align: center; }
+
+.reconocimientos__titulo--2 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .reconocimientos__titulo--2 {
+    margin-top: 0px; } }
+
+.card .card-img-top {
+  height: auto; }
+  @media only screen and (min-width: 768px) {
+    .card .card-img-top {
+      height: 213px;
+      object-fit: cover; } }
+
+#footer {
+  background-color: #AAFF69; }
+  #footer li {
+    list-style-type: none;
+    margin: 0 10px;
+    display: flex; }
+    #footer li a img {
+      width: 100%;
+      max-width: 40px; }
+  #footer .btnTecheka {
+    display: flex;
+    align-items: center; }

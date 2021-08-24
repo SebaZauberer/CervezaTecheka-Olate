@@ -1,0 +1,159 @@
+.videoHero {
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+
+  &__video {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+  }
+
+  &__titulo {
+    font-family: $fPatua;
+    font-size: 2rem;
+    color: $blanco;
+    text-transform: uppercase;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+
+  @include media(md) {
+    &__titulo {
+      font-size: 2.5rem;
+      top: 20%;
+    }
+  }
+
+  @include media(lg) {
+    height: 91vh;
+    
+    &__video {
+      height: unset;
+      width: 100%;
+    }
+
+    &__titulo {
+      font-size: 3rem;
+      top: 65%;
+    }
+  }
+}
+
+.sobreNosotros {
+  background-color: $verde2;
+
+  &__img {
+    margin: 40px 0;
+    align-self: center;
+  }
+
+  .btnTecheka {
+    display: block;
+
+    margin: {
+      top: 15*2px;
+      bottom: 15*2px;
+    }
+
+    ;
+  }
+
+  @include media(md) {
+    &__titulo {
+      margin: 52px 0 30px;
+    }
+  }
+
+  @include media(lg) {
+    .btnTecheka {
+      display: inline-block;
+    }
+  }
+}
+
+.catalogoHome {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-color: $azul;
+  color: $blanco;
+
+  &__bloque1 {
+    flex-basis: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  &__titulo {
+    margin: 52px 0 30px;
+    color: $verde1;
+  }
+
+  &__bloque2 {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btnTecheka {
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  @include media(md) {
+    flex-flow: row nowrap;
+
+    &__bloque1 {
+      flex-basis: 50%;
+    }
+
+    &__bloque2 {
+      flex-basis: 50%;
+    }
+  }
+  @include media(lg) {
+    .btnTecheka {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+
+.reconocimientos {
+  &__titulo {
+    &--1 {
+      margin: 52px 0;
+      flex-basis: 100%;
+      text-align: center;
+    }
+
+    &--2 {
+      text-align: center;
+      margin-top: (30 / 2)+px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+  }
+
+  @include media(md) {
+    &__titulo {
+      &--2 {
+        margin-top: (30*0)+px;
+      }
+    }
+  }
+}

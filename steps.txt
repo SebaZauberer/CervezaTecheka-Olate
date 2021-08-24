@@ -1,0 +1,11 @@
+1- DESCARGAR E INSTALAR NodeJs ------ https://nodejs.org/es/
+2- CMD ---- npm -v  ---- node -v
+3- CMD ---- (cd) change directory a mi proyecto
+4- CMD ---- npm init
+5- CMD ---- npm install -D node-sass nodemon
+6- EDITOR---- Abrir package.json
+7- EDITOR---- Agregar los sgt comandos donde estan los scripts --- 
+		"build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+8- CMD ---- npm run build-css
+9- CMD ---- npm run watch-css

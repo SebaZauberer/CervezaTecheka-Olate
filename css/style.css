@@ -151,6 +151,9 @@ hr {
       display: inline-block;
       width: auto; } }
 
+.reconocimientos__card {
+  box-shadow: 0 8px 10px 0 #B3B3B342; }
+
 .reconocimientos__titulo--1 {
   margin: 52px 0;
   flex-basis: 100%;
@@ -158,13 +161,14 @@ hr {
 
 .reconocimientos__titulo--2 {
   text-align: center;
-  margin-top: 15px;
   margin-bottom: 30px;
-  text-transform: uppercase; }
+  padding: 10px 5px;
+  background-color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem; }
 
-@media only screen and (min-width: 768px) {
-  .reconocimientos__titulo--2 {
-    margin-top: 0px; } }
+.reconocimientos__img {
+  width: 100%; }
 
 .card .card-img-top {
   height: auto; }

@@ -8,21 +8,21 @@
 
 //para los media queries
 @mixin media($querie) {
-    @if $querie=="md" {
-        @media only screen and (min-width: $breakpointTablet) {
-            @content;
-        }
+  @if $querie=="md" {
+    @media only screen and (min-width: $breakpointTablet) {
+      @content;
     }
+  }
 
-    @else if $querie=="lg" {
-        @media only screen and (min-width: $breakpointMonitor) {
-            @content;
-        }
+  @else if $querie=="lg" {
+    @media only screen and (min-width: $breakpointMonitor) {
+      @content;
     }
+  }
 
-    @else {
-        @media only screen and (#{$querie}) {
-            @content;
-        }
+  @else {
+    @media only screen and (#{$querie}) {
+      @content;
     }
+  }
 }

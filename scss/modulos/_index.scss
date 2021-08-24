@@ -134,6 +134,9 @@
 }
 
 .reconocimientos {
+  &__card{
+    box-shadow: 0 8px 10px 0 #B3B3B342;
+  }
   &__titulo {
     &--1 {
       margin: 52px 0;
@@ -143,17 +146,13 @@
 
     &--2 {
       text-align: center;
-      margin-top: (30 / 2)+px;
       margin-bottom: 30px;
-      text-transform: uppercase;
+      padding: 10px 5px;
+      background-color: $blanco;
+      @include fSize(18);
     }
   }
-
-  @include media(md) {
-    &__titulo {
-      &--2 {
-        margin-top: (30*0)+px;
-      }
-    }
+  &__img{
+    width: 100%;
   }
 }

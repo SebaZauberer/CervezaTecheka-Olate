@@ -14,6 +14,10 @@
     color: $verde1;
   }
 
+  &--bgBlanco{
+    background-color: $blanco;
+  }
+
   &--inverse {
     color: $verde1;
     border: 2px solid $verde1;

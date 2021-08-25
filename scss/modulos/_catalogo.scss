@@ -1,0 +1,18 @@
+#catalogoCervezas {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  grid-gap: 50px 10px;
+  
+  .cervezaDatos li{
+    @include fSize(22);
+  }
+
+  @include media(md){
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}

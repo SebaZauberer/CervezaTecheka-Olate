@@ -1,0 +1,40 @@
+.thead-darkblue {
+  background-color: $azul;
+  color: $verde1;
+}
+
+.directoCasa {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: $verde1;
+  color: $azul;
+  margin-top: 20px;
+  
+  &__content{
+    padding: 15px;
+  }
+
+  &__btn{
+    width: 100%;
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include media(md) {
+    flex-flow: row wrap;
+
+    &__content,
+    &__foto {
+      flex-basis: 50%;
+    }
+  }
+  @include media(lg){
+    &__btn{
+      width: auto;
+    }
+  }
+}

@@ -195,6 +195,33 @@ hr {
       grid-template-columns: repeat(3, 33%);
       grid-template-rows: 1fr 1fr 1fr; } }
 
+.thead-darkblue {
+  background-color: #0B2D40;
+  color: #AAFF69; }
+
+.directoCasa {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #AAFF69;
+  color: #0B2D40;
+  margin-top: 20px; }
+  .directoCasa__content {
+    padding: 15px; }
+  .directoCasa__btn {
+    width: 100%; }
+  .directoCasa__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  @media only screen and (min-width: 768px) {
+    .directoCasa {
+      flex-flow: row wrap; }
+      .directoCasa__content, .directoCasa__foto {
+        flex-basis: 50%; } }
+  @media only screen and (min-width: 992px) {
+    .directoCasa__btn {
+      width: auto; } }
+
 #footer {
   background-color: #AAFF69; }
   #footer li {

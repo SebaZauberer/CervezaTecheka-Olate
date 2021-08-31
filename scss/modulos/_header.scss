@@ -5,11 +5,22 @@
     width: 40%;
   }
 
-  .navbar-light .navbar-nav .active .btn-group .nav-link{
+  .navbar-light .navbar-nav .active .btn-group .nav-link {
     color: $negro;
   }
 
-  .navbar-nav .dropdown-menu {
-    position: absolute;
+  .navbar-nav {
+    align-items: flex-end;
+
+    .nav-item {
+      width: 100%;
+      text-align: right;
+    }
+    .dropdown-menu {
+      position: absolute;
+      right: 0;
+      left: auto;
+    }
   }
+  
 }

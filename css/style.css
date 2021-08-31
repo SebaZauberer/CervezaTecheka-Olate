@@ -37,8 +37,15 @@ hr {
     width: 40%; }
   #header .navbar-light .navbar-nav .active .btn-group .nav-link {
     color: #000; }
-  #header .navbar-nav .dropdown-menu {
-    position: absolute; }
+  #header .navbar-nav {
+    align-items: flex-end; }
+    #header .navbar-nav .nav-item {
+      width: 100%;
+      text-align: right; }
+    #header .navbar-nav .dropdown-menu {
+      position: absolute;
+      right: 0;
+      left: auto; }
 
 .btnTecheka {
   display: inline-block;
